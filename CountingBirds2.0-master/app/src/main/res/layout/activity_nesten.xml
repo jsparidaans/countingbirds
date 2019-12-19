@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.froukje.countingbirds.NavigationDrawer">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="499dp">
+
+        <EditText
+            android:id="@+id/planIdZoek"
+            android:layout_width="181dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Plan ID zoek:"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"/>
+
+        <Button
+            android:id="@+id/buttonZoek"
+            android:layout_width="182dp"
+            android:layout_height="45dp"
+            android:text="Zoek"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="-48dp"/>
+
+    <ListView
+        android:layout_width="377dp"
+        android:layout_height="210dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:scrollbars="vertical"
+        android:id="@+id/lvNest">
+
+    </ListView>
+
+    <EditText
+        android:id="@+id/planId"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Plan ID:"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"/>
+
+    <EditText
+        android:id="@+id/legNr"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Legsel nummer:"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp" />
+
+    <EditText
+        android:id="@+id/soort"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Soort:"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp" />
+
+    <EditText
+        android:id="@+id/landSoort"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="LandSoort:"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp" />
+
+        <Button
+            android:id="@+id/nieuwButton"
+            android:layout_width="175dp"
+            android:layout_height="45dp"
+            android:text="Nieuw"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/aantalEi"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Aantal eieren:"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="-290dp" />
+
+        <EditText
+        android:id="@+id/gebied"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Locatie gebied:"
+        android:layout_marginLeft="210dp"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:id="@+id/toestand"
+            android:layout_width="175dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Toestand nest:"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="15dp"/>
+
+
+        <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:text="Delete"
+        android:layout_marginTop="80dp"
+            android:layout_marginLeft="210dp"/>
+
+
+    </LinearLayout>
+<android.support.design.widget.NavigationView
+    app:headerLayout="@layout/header"
+    android:id="@+id/menu"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    app:itemTextColor="@color/darkGray"
+    app:itemIconTint="@color/darkGray"
+    app:menu="@menu/drawermenu"
+    android:layout_gravity="start">
+</android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>

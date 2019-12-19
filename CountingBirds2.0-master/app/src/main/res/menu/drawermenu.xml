@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/home" android:title="Home" android:icon="@drawable/ic_home_icons"/>
+<item android:id="@+id/nesten" android:title="Nesten" android:icon="@drawable/ic_nesten_icons"/>
+<item android:id="@+id/toestand" android:title="Toestand" android:icon="@drawable/ic_toestand_icons"/>
+<item android:id="@+id/vrijwilligers" android:title="Vrijwilligers" android:icon="@drawable/ic_vrijwilligers_icons"/>
+<item android:id="@+id/agenda" android:title="Agenda" android:icon="@drawable/ic_agenda_icons"/>
+<item android:id="@+id/bedrijven" android:title="Bedrijven" android:icon="@drawable/ic_bedrijven_icons"/>
+<item android:id="@+id/gps" android:title="GPS" android:icon="@drawable/ic_gps_icons"/>
+<item android:id="@+id/logout" android:title="Logout" android:icon="@drawable/ic_logout_icons"/>
+</menu>

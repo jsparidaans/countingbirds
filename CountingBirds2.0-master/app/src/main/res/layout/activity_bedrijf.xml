@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.froukje.countingbirds.NavigationDrawer">
+
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="BedrijfActivity">
+
+        <ListView
+            android:id="@+id/lvUpper"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:scrollbars="vertical"
+            app:layout_constraintBaseline_toBaselineOf="parent"
+            app:layout_constraintRight_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp"
+
+            />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="280dp">
+
+
+            <TextView
+                android:id="@+id/tvBedrijf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="70dp"
+                android:scrollbars="vertical"
+                android:text="Bedrijf Naam"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="294dp" />
+
+            <TextView
+                android:id="@+id/tvBedrijfID"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:scrollbars="vertical"
+                android:text="Bedrijf ID"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="388dp" />
+
+            <TextView
+                android:id="@+id/tvEigenaarID"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:scrollbars="vertical"
+                android:layout_marginTop="120dp"
+                android:layout_marginLeft="10dp"
+                android:text="Eigenaar ID"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="388dp" />
+
+            <TextView
+                android:id="@+id/tvTelefoon"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:scrollbars="vertical"
+                android:text="Telefoon nr"
+                android:layout_marginTop="170dp"
+                android:layout_marginLeft="10dp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="438dp" />
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:scrollbars="vertical"
+                android:text="Email"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="230dp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="487dp" />
+
+            <TextView
+                android:id="@+id/tvPostCode"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:scrollbars="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="200dp"
+                android:text="Post Code"
+                tools:layout_editor_absoluteX="181dp"
+                tools:layout_editor_absoluteY="293dp" />
+
+            <TextView
+                android:id="@+id/tvPlaats"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:scrollbars="vertical"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="200dp"
+                android:text="Plaats"
+                tools:layout_editor_absoluteX="181dp"
+                tools:layout_editor_absoluteY="341dp" />
+
+            <TextView
+                android:id="@+id/tvStraat"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:scrollbars="vertical"
+                android:layout_marginTop="120dp"
+                android:layout_marginLeft="200dp"
+                android:text="Straat"
+                tools:layout_editor_absoluteX="181dp"
+                tools:layout_editor_absoluteY="388dp" />
+
+            <TextView
+                android:id="@+id/tvBoerGebied"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:scrollbars="vertical"
+                android:layout_marginTop="170dp"
+                android:layout_marginLeft="200dp"
+                android:text="Boer Gebied"
+                tools:layout_editor_absoluteX="181dp"
+                tools:layout_editor_absoluteY="437dp" />
+
+        </RelativeLayout>
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white"
+        app:headerLayout="@layout/header"
+        app:itemIconTint="@color/darkGray"
+        app:itemTextColor="@color/darkGray"
+        app:menu="@menu/drawermenu"></android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>
